@@ -10289,3 +10289,7 @@ section.contact-section {
 .contact-section .php-email-form button[type="submit"]:hover {
   background: #368f83;
 }
+
+.show-read-more .more-text{
+  display: none;
+}
