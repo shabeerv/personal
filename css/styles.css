@@ -9958,6 +9958,7 @@ h3 {
   }
   body {
     min-width: 992px !important;
+    background-color: #eeeeee;
   }
 
   .container {
@@ -10225,7 +10226,7 @@ section.contact-section {
   border-radius: 50px;
 }
 
-.contact-section .php-email-form button[type="submit"]:hover {
+.contact-section .email-form button[type="submit"]:hover {
   background: #368f83;
 }
 
