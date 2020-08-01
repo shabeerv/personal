@@ -2,11 +2,11 @@
     include 'config.php';
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $subject = $_POST['subject'];
+    $phone = $_POST['phone'];
     $message = $_POST['message'];
 
-    $sql = "INSERT INTO messages(name, email, subject, message) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO contact(name, email, phone, message) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->execute([$name, $email, $subject, $message]);
+    $stmt->execute([$name, $email, $phone, $message]);
     echo "Record added";
 ?>
