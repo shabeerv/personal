@@ -7,6 +7,8 @@
 
     $sql = "INSERT INTO contact(name, email, phone, message) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
+    echo "test";
     $stmt->execute([$name, $email, $phone, $message]);
+    echo "passed";
     echo "Record added";
 ?>
