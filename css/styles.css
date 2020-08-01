@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #eeeeee;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -2000,7 +2000,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #fafafa;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -2021,7 +2021,7 @@ pre code {
 }
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: #fcfcfc;
   border-color: #824040;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(130, 64, 64, 0.25);
@@ -10143,7 +10143,7 @@ section.contact-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 section.contact-section {
   width: 100%;
@@ -10165,7 +10165,7 @@ section.contact-section {
 
 .contact-section .info {
   width: 100%;
-  background: #ffffff;
+  background: #eeeeee;
 }
 
 .contact-section .info i {
@@ -10208,6 +10208,7 @@ section.contact-section {
 
 .contact-section .email-form {
   width: 100%;
+  background: #eeeeee;
 }
 
 
