@@ -1,5 +1,5 @@
 <?php
-    $host = "localhost:8888";
+    $host = "localhost";
     $username = "shabeer";
     $password = "12345678";
     $dbname = "shabeervco";
@@ -13,6 +13,15 @@
     }*/
 
     $conn = mysqli_connect($host, $username, $password, $dbname);
+
+    if($conn)
+    {
+        echo "connection success";
+    }
+    else
+    {
+        echo "connection failed";
+    }
 
     if(isset($_POST['sendMessage']))
     {
