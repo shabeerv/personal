@@ -12,16 +12,12 @@
         echo "Connection failed: ".$e->getMessage();
     }*/
 
-    $conn = mysqli_connect($host, $username, $password, $dbname);
+    $conn = new mysqli($host, $username, $password, $dbname);
 
-    if($conn)
-    {
-        echo "connection success";
-    }
-    else
-    {
-        echo "connection failed";
-    }
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+     }
 
     if(isset($_POST['sendMessage']))
     {
