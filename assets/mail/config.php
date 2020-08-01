@@ -30,7 +30,7 @@
         $phone = $_POST['phone'];
         $message = $_POST['message'];
 
-        $query =  "INSERT INTO contact(name, email, phone, message) VALUES ('$name', '$email', '$phone', '$message')";
+        $query =  "INSERT INTO contact(uname, uemail, uphone, umessage) VALUES ('$name', '$email', '$phone', '$message')";
         $result = mysqli_query($conn, $query);
 
         if($result)
