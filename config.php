@@ -29,14 +29,11 @@
         $query =  "INSERT INTO contact(uname, uemail, uphone, umessage) VALUES ('$uname', '$uemail', '$uphone', '$umessage')";
         $result = mysqli_query($conn, $query);
 
-        if($result)
-        {
-            echo "success";
-        }
-        else
-        {
-            echo "fail";
-        }
+        if ($result) {
+            echo "New record created successfully";
+         } else {
+            echo "Error: " . $query . "" . mysqli_error($conn);
+         }
 
     }
 
